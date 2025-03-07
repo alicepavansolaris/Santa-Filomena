@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Century+Gothic&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    background-color: #e6d5d0; /* Vinho clarinho */
+    color: black;
+    margin: 0;
+    padding: 0;
+    background-image: url('Group\ 1.png'); /* Altere para o caminho da sua imagem */
+    background-size: cover; /* A imagem ocupa toda a tela */
+    background-position: center center; /* Centraliza a imagem */
+    background-attachment: fixed; /* A imagem permanece fixa ao rolar */
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+}
+
+.logo-left, .logo-right {
+    height: 80px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center; /* Centraliza os itens do menu */
+    align-items: center;
+    flex: 1; /* Garante que o menu ocupe o espaço disponível entre os logos */
+   /* margin-left: 100px;*/
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    color: #800020; /* Vinho */
+}
+
+/* Ajustes no header-right para manter o ícone separado */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Aumenta o espaço entre o segundo logo e o ícone do WhatsApp */
+
+}
+
+
+.whatsapp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; /* Espaçamento abaixo da imagem */
+}
+
+.whatsapp-image {
+    width: 350px; /* Tamanho ajustado da imagem */
+    height: 350px; /* Tamanho ajustado da imagem */
+    object-fit: contain;
+    cursor: pointer;
+}
+
+
+
+.content {
+    text-align: center;
+    padding: 30px;
+}
+.content h2 {
+    text-align: center;
+    color: #25030b; /* Vinho */
+    font-family: 'Roboto', sans-serif; /* Fonte moderna e versátil */
+    font-size: 2rem; /* Tamanho grande para dar presença */
+    font-weight: bold; /* Peso forte para um impacto visual */
+    text-transform: uppercase; /* Letras maiúsculas para um toque moderno */
+    letter-spacing: 5px; /* Espaçamento amplo entre as letras */
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 30px 0;
+}
+
+.content h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #800020, #f2b1c2); /* Gradiente sutil */
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-out;
+}
+
+.content h2:hover::before {
+    transform: translateX(-50%) scaleX(1); /* Efeito de expansão suave */
+}
+
+.content h2 span {
+    display: inline-block;
+    color: #800020; /* Cor do texto destacada */
+    animation: bounce 0.6s ease-in-out infinite; /* Animação de "pulo" do texto */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+.slideshow-container {
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.slideshow-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilos da seção de localização */
+.localizacao {
+    background-color: white;
+    padding: 30px 10px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+.localizacao h2 {
+    color: #800020; /* Vinho */
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.maps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.maps iframe {
+    width: 30%;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #800020;
+}
+
+.social-links a {
+    margin: 10px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Estilos para a seção de Contato */
+.contato {
+    background-color: white;
+    padding: 30px 10px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contato h2 {
+    color: #800020; /* Vinho */
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-transform: uppercase; 
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.social-links img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Estilos para a seção de Sobre */
+.sobre {
+    background-color: white;
+    padding: 30px 10px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.sobre h2 {
+    color: #800020; /* Vinho */
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-transform: uppercase; 
+}
+
+.sobre p {
+    font-size: 16px;
+    color: #333333; /* Cor mais neutra para o texto */
+    margin-bottom: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Controla o espaço entre o logo e o ícone */
+}
+
+.whatsapp-icon img {
+    width: 50px; /* Ajuste o tamanho do ícone conforme necessário */
+    height: 50px;
+    object-fit: contain;
+}
+
+
+.footer {
+    background-color: #800020; /* Vinho */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+

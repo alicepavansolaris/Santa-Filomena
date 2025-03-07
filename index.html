@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Espaço Santa Filomena</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles2.css">
+   </head> 
+    <body>
+          <div class="container">
+                <div class="header">
+                    <img src="filomena_reflexo.jpg" alt="Logo" class="logo-left">
+                    <div class="menu">
+                        <a href="#localizacao">Localização</a>
+                        <a href="#contato">Contato</a>
+                        <a href="#sobre">Sobre</a>
+                    </div>
+                    <a href="http://api.whatsapp.com/send?phone=5511974062884" target="_blank" class="whatsapp-icon">
+                        <img src="whatsapp.png" alt="WhatsApp">
+                    </a>
+                    <a href="https://www.grupokifesta.com.br" target="_blank">
+                        <img src="logo_grupo_web_reflexo.jpg" alt="Logo" class="logo-right">
+                    </a>
+                </div>
+                <div class="content">
+                    <h2>Seja bem-vindo ao Espaço Santa Filomena</h2>
+                    <div class="slideshow-container">
+                        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                        <!-- Imagens serão geradas dinamicamente -->
+                        <div class="slides"></div>
+                        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                    </div>
+                </div>
+
+                <!-- Localização -->
+                <section id="localizacao" class="localizacao">
+                    <h2>Localização</h2>
+                    <p>Av. Com. Antônio Borin, 4600<br>
+                       Caxambu / Jundiaí / SP<br>
+                       CEP 13.218-665</p>
+                    <div class="maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!4v1740754726147!6m8!1m7!1sjJzB6b94U1aWYJ90MVh7tw!2m2!1d-23.16718562730905!2d-46.84730151474012!3f133.9!4f-13.61!5f0.4000000000000002" allowfullscreen loading="lazy"></iframe>
+                        <iframe src="https://embed.waze.com/iframe?zoom=17&lat=-23.167417&lon=-46.845469&ct=livemap" allowfullscreen></iframe>
+                    </div>
+                </section>
+
+                <!-- Contato -->
+                <section id="contato" class="contato">
+                    <h2>Contato</h2>
+                    <p>Fale com a gente através das redes sociais ou pelo WhatsApp:</p>
+                    <div class="social-links">
+                        <a href="http://api.whatsapp.com/send?phone=5511974062884" target="_blank">
+                            <img src="whatsapp.png" alt="WhatsApp">
+                        </a>
+                        <a href="https://www.facebook.com/EspacoSantaFilomena/" target="_blank">
+                            <img src="facebook.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/Espaco_Santa_Filomena/" target="_blank">
+                            <img src="instagram.png" alt="Instagram">
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Sobre -->
+                <section id="sobre" class="sobre">
+                    <h2>Sobre o Espaço Santa Filomena</h2>
+                    <p>O Espaço Santa Filomena é um local acolhedor e ideal para eventos especiais. Estamos sempre prontos para oferecer o melhor atendimento e experiências inesquecíveis.</p>
+                    <p>Venha conhecer mais sobre nossa missão, visão e os serviços que oferecemos!</p>
+                </section>
+
+                <footer class="footer">
+                    <p>&copy; <span id="current-year"></span> Espaço Santa Filomena. Todos os direitos reservados.</p>
+                </footer>
+                
+          </div>
+          <script src="script.js"></script>
+    </body>
+</html>
