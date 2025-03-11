@@ -1,7 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Century+Gothic&display=swap');
 
+@font-face {
+    font-family: 'Futura Light BT';
+    src: url('fonts/Futura Light BT.ttf') format('truetype'),
+         url('fonts/Futura Light BT.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Champignon';
+    src: url('fonts/Champignon.ttf') format('truetype'),
+         url('fonts/Champignon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Futura Light BT', sans-serif;
     text-transform: uppercase;
     background-color: #e6d5d0; /* Vinho clarinho */
     color: black;
@@ -83,8 +100,8 @@ body {
 }
 .content h2 {
     text-align: center;
-    color: #25030b; /* Vinho */
-    font-family: 'Roboto', sans-serif; /* Fonte moderna e versátil */
+    color: #570317; /* Vinho */
+    font-family: 'Futura Light BT', sans-serif; /* Fonte moderna e versátil */
     font-size: 2rem; /* Tamanho grande para dar presença */
     font-weight: bold; /* Peso forte para um impacto visual */
     text-transform: uppercase; /* Letras maiúsculas para um toque moderno */
@@ -195,7 +212,7 @@ body {
 
 .localizacao h2 {
     color: #800020; /* Vinho */
-    margin-bottom: 10px;
+    margin-bottom: -30px;
     font-size: 24px;
 }
 
@@ -235,7 +252,7 @@ body {
 
 .contato h2 {
     color: #800020; /* Vinho */
-    margin-bottom: 10px;
+    margin-bottom: -30px;
     font-size: 24px;
     text-transform: uppercase; 
 }
@@ -272,7 +289,7 @@ body {
 
 .sobre h2 {
     color: #800020; /* Vinho */
-    margin-bottom: 10px;
+    margin-bottom: -30px;
     font-size: 24px;
     text-transform: uppercase; 
 }
